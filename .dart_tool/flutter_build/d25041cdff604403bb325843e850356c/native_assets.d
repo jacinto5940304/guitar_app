@@ -1,0 +1,1 @@
+ /Users/jacinto5940304/software_design/guitar_app/.dart_tool/flutter_build/d25041cdff604403bb325843e850356c/native_assets.yaml: 

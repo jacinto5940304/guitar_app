@@ -1,0 +1,374 @@
+name: guitar_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.6
+  audioplayers: ^0.20.1  # 4.1.0
+  http: any
+  url_launcher: ^6.3.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/jacinto.png
+
+    - assets/images/jimmy.png
+
+    - assets/images/quo.png
+
+    - assets/images/recorder.png
+
+    - assets/images/file.png
+
+    - assets/images/sheet1.png
+
+    - assets/images/chords/C-1.png
+    - assets/images/chords/Cm-1.png
+    - assets/images/chords/Cmaj7-1.png  
+    - assets/images/chords/Cm7-1.png  
+    - assets/images/chords/Cadd9-1.png  
+    - assets/images/chords/C-2.png
+    - assets/images/chords/Cm-2.png
+    - assets/images/chords/Cmaj7-2.png  
+    - assets/images/chords/Cm7-2.png  
+    - assets/images/chords/Cadd9-2.png  
+    - assets/images/chords/C-3.png
+    - assets/images/chords/Cm-3.png
+    - assets/images/chords/Cmaj7-3.png  
+    - assets/images/chords/Cm7-3.png  
+    - assets/images/chords/Cadd9-3.png  
+    - assets/images/chords/C7-3.png  
+
+    - assets/images/chords/D-1.png
+    - assets/images/chords/D7-1.png
+    - assets/images/chords/Dm-1.png
+    - assets/images/chords/Dm7-1.png
+    - assets/images/chords/Dsus2-1.png
+    - assets/images/chords/Dsus4-1.png
+    - assets/images/chords/D_F#-1.png
+    - assets/images/chords/D-2.png
+    - assets/images/chords/D7-2.png
+    - assets/images/chords/Dm-2.png
+    - assets/images/chords/Dm7-2.png
+    - assets/images/chords/Dsus2-2.png
+    - assets/images/chords/Dsus4-2.png
+    - assets/images/chords/D_F#-2.png
+    - assets/images/chords/D-3.png
+    - assets/images/chords/D7-3.png
+    - assets/images/chords/Dm-3.png
+    - assets/images/chords/Dm7-3.png
+    - assets/images/chords/Dsus2-3.png
+    - assets/images/chords/Dsus4-3.png
+    - assets/images/chords/D_F#-3.png
+
+    - assets/images/chords/E-1.png
+    - assets/images/chords/E7-1.png
+    - assets/images/chords/Em-1.png
+    - assets/images/chords/Em7-1.png
+    - assets/images/chords/E-2.png
+    - assets/images/chords/E7-2.png
+    - assets/images/chords/Em-2.png
+    - assets/images/chords/Em7-2.png
+    - assets/images/chords/E-3.png
+    - assets/images/chords/E7-3.png
+    - assets/images/chords/Em-3.png
+    - assets/images/chords/Em7-3.png
+
+    - assets/images/chords/F-1.png
+    - assets/images/chords/F7-1.png
+    - assets/images/chords/Fm-1.png
+    - assets/images/chords/Fm7-1.png
+    - assets/images/chords/Fmaj7-1.png
+    - assets/images/chords/F-2.png
+    - assets/images/chords/F7-2.png
+    - assets/images/chords/Fm-2.png
+    - assets/images/chords/Fm7-2.png
+    - assets/images/chords/Fmaj7-2.png
+    - assets/images/chords/F-3.png
+    - assets/images/chords/F7-3.png
+    - assets/images/chords/Fm-3.png
+    - assets/images/chords/Fm7-3.png
+    - assets/images/chords/Fmaj7-3.png
+
+    - assets/images/chords/F#-1.png
+    - assets/images/chords/F#m-1.png
+    - assets/images/chords/F#-2.png
+    - assets/images/chords/F#m-2.png
+    - assets/images/chords/F#-3.png
+    - assets/images/chords/F#m-3.png
+
+    - assets/images/chords/G-1.png
+    - assets/images/chords/G7-1.png
+    - assets/images/chords/Gm-1.png
+    - assets/images/chords/Gm7-1.png
+    - assets/images/chords/G_B-1.png    #G_B = G/B
+    - assets/images/chords/G-2.png
+    - assets/images/chords/G7-2.png
+    - assets/images/chords/Gm-2.png
+    - assets/images/chords/Gm7-2.png
+    - assets/images/chords/G_B-2.png    #G_B = G/B
+    - assets/images/chords/G-3.png
+    - assets/images/chords/G7-3.png
+    - assets/images/chords/Gm-3.png
+    - assets/images/chords/Gm7-3.png
+    - assets/images/chords/G_B-3.png    #G_B = G/B
+
+    - assets/images/chords/A-1.png
+    - assets/images/chords/A7-1.png
+    - assets/images/chords/Am-1.png
+    - assets/images/chords/Am7-1.png
+    - assets/images/chords/Amaj7-1.png
+    - assets/images/chords/Asus2-1.png
+    - assets/images/chords/A-2.png
+    - assets/images/chords/A7-2.png
+    - assets/images/chords/Am-2.png
+    - assets/images/chords/Am7-2.png
+    - assets/images/chords/Amaj7-2.png
+    - assets/images/chords/Asus2-2.png
+    - assets/images/chords/A-3.png
+    - assets/images/chords/A7-3.png
+    - assets/images/chords/Am-3.png
+    - assets/images/chords/Am7-3.png
+    - assets/images/chords/Amaj7-3.png
+    - assets/images/chords/Asus2-3.png
+
+    - assets/images/chords/B-1.png
+    - assets/images/chords/B7-1.png
+    - assets/images/chords/Bm-1.png    
+    - assets/images/chords/Bm7-1.png  
+    - assets/images/chords/Bm7-5-1.png
+    - assets/images/chords/B-2.png
+    - assets/images/chords/B7-2.png
+    - assets/images/chords/Bm-2.png    
+    - assets/images/chords/Bm7-2.png  
+    - assets/images/chords/Bm7-5-2.png
+    - assets/images/chords/B-3.png
+    - assets/images/chords/B7-3.png
+    - assets/images/chords/Bm-3.png    
+    - assets/images/chords/Bm7-3.png  
+    - assets/images/chords/Bm7-5-3.png
+
+    - assets/images/sound/A-1.mp3
+    - assets/images/sound/A-2.mp3
+    - assets/images/sound/A-3.mp3
+    - assets/images/sound/A7-1.mp3
+    - assets/images/sound/A7-2.mp3
+    - assets/images/sound/A7-3.mp3
+    - assets/images/sound/Am-1.mp3
+    - assets/images/sound/Am-2.mp3
+    - assets/images/sound/Am-3.mp3
+    - assets/images/sound/Am7-1.mp3
+    - assets/images/sound/Am7-2.mp3
+    - assets/images/sound/Am7-3.mp3
+    - assets/images/sound/Amaj7-1.mp3
+    - assets/images/sound/Amaj7-2.mp3
+    - assets/images/sound/Amaj7-3.mp3
+    - assets/images/sound/Asus2-1.mp3
+    - assets/images/sound/Asus2-2.mp3
+    - assets/images/sound/Asus2-3.mp3
+
+    - assets/images/sound/B-1.mp3
+    - assets/images/sound/B-2.mp3
+    - assets/images/sound/B-3.mp3
+    - assets/images/sound/B7-1.mp3
+    - assets/images/sound/B7-2.mp3
+    - assets/images/sound/B7-3.mp3
+    - assets/images/sound/Bm-1.mp3
+    - assets/images/sound/Bm-2.mp3
+    - assets/images/sound/Bm-3.mp3
+    - assets/images/sound/Bm7-1.mp3
+    - assets/images/sound/Bm7-2.mp3
+    - assets/images/sound/Bm7-3.mp3
+    - assets/images/sound/Bm7-5-1.mp3
+    - assets/images/sound/Bm7-5-2.mp3
+    - assets/images/sound/Bm7-5-3.mp3
+
+
+    - assets/images/sound/C-1.mp3
+    - assets/images/sound/C-2.mp3
+    - assets/images/sound/C-3.mp3
+    - assets/images/sound/C7-1.mp3
+    - assets/images/sound/C7-2.mp3
+    - assets/images/sound/C7-3.mp3
+    - assets/images/sound/Cm-1.mp3
+    - assets/images/sound/Cm-2.mp3
+    - assets/images/sound/Cm-3.mp3
+    - assets/images/sound/Cm7-1.mp3
+    - assets/images/sound/Cm7-2.mp3
+    - assets/images/sound/Cm7-3.mp3
+    - assets/images/sound/Cmaj7-1.mp3
+    - assets/images/sound/Cmaj7-2.mp3
+    - assets/images/sound/Cmaj7-3.mp3
+    - assets/images/sound/Cadd9-1.mp3
+    - assets/images/sound/Cadd9-2.mp3
+    - assets/images/sound/Cadd9-3.mp3
+    - assets/images/sound/Cm7-5-1.mp3
+    - assets/images/sound/Cm7-5-2.mp3
+    - assets/images/sound/Cm7-5-3.mp3
+
+    - assets/images/sound/D-1.mp3
+    - assets/images/sound/D-2.mp3
+    - assets/images/sound/D-3.mp3
+    - assets/images/sound/D7-1.mp3
+    - assets/images/sound/D7-2.mp3
+    - assets/images/sound/D7-3.mp3
+    - assets/images/sound/Dm-1.mp3
+    - assets/images/sound/Dm-2.mp3
+    - assets/images/sound/Dm-3.mp3
+    - assets/images/sound/Dm7-1.mp3
+    - assets/images/sound/Dm7-2.mp3
+    - assets/images/sound/Dm7-3.mp3
+    - assets/images/sound/D_F#-1.mp3
+    - assets/images/sound/D_F#-2.mp3
+    - assets/images/sound/D_F#-3.mp3
+    - assets/images/sound/Dsus2-1.mp3
+    - assets/images/sound/Dsus2-2.mp3
+    - assets/images/sound/Dsus2-3.mp3
+    - assets/images/sound/Dsus4-1.mp3
+    - assets/images/sound/Dsus4-2.mp3
+    - assets/images/sound/Dsus4-3.mp3
+
+    - assets/images/sound/E-1.mp3
+    - assets/images/sound/E-2.mp3
+    - assets/images/sound/E-3.mp3
+    - assets/images/sound/E7-1.mp3
+    - assets/images/sound/E7-2.mp3
+    - assets/images/sound/E7-3.mp3
+    - assets/images/sound/Em-1.mp3
+    - assets/images/sound/Em-2.mp3
+    - assets/images/sound/Em-3.mp3
+    - assets/images/sound/Em7-1.mp3
+    - assets/images/sound/Em7-2.mp3
+    - assets/images/sound/Em7-3.mp3
+
+
+    - assets/images/sound/F-1.mp3
+    - assets/images/sound/F-2.mp3
+    - assets/images/sound/F-3.mp3
+    - assets/images/sound/F7-1.mp3
+    - assets/images/sound/F7-2.mp3
+    - assets/images/sound/F7-3.mp3
+    - assets/images/sound/Fm-1.mp3
+    - assets/images/sound/Fm-2.mp3
+    - assets/images/sound/Fm-3.mp3
+    - assets/images/sound/Fm7-1.mp3
+    - assets/images/sound/Fm7-2.mp3
+    - assets/images/sound/Fm7-3.mp3
+    - assets/images/sound/Fmaj7-1.mp3
+    - assets/images/sound/Fmaj7-2.mp3
+    - assets/images/sound/Fmaj7-3.mp3
+
+    - assets/images/sound/F#-1.mp3
+    - assets/images/sound/F#-2.mp3
+    - assets/images/sound/F#-3.mp3   
+    - assets/images/sound/F#m-1.mp3
+    - assets/images/sound/F#m-2.mp3
+    - assets/images/sound/F#m-3.mp3  
+
+    - assets/images/sound/G-1.mp3
+    - assets/images/sound/G-2.mp3
+    - assets/images/sound/G-3.mp3
+    - assets/images/sound/G7-1.mp3
+    - assets/images/sound/G7-2.mp3
+    - assets/images/sound/G7-3.mp3
+    - assets/images/sound/Gm-1.mp3
+    - assets/images/sound/Gm-2.mp3
+    - assets/images/sound/Gm-3.mp3
+    - assets/images/sound/Gm7-1.mp3
+    - assets/images/sound/Gm7-2.mp3
+    - assets/images/sound/Gm7-3.mp3
+
+    - assets/images/sound/Da.mp3
+    - assets/images/sound/Don.mp3
+    - assets/images/sound/t.mp3
+
+    - assets/images/file.png  
+    - assets/images/folder.png  
+    - assets/images/jacinto.png  
+    - assets/images/jimmy.png 
+    - assets/images/quiz-logo.png
+    - assets/images/quo.png 
+    - assets/images/recorder.png 
+    - assets/images/sheet1.png 
+
+  # - images/a_dot_burr.jpeg
+  # - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
