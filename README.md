@@ -84,3 +84,9 @@
 
 ## 特別感謝
 感謝所有參與測試的使用者提供寶貴意見，幫助我們讓 ChordMasterAI 更臻完善！
+
+
+## 期末報告呈現
+由於flutter app 架設較為困難，若想先看APP架構可先看簡報：
+[點擊觀看簡報](https://drive.google.com/file/d/12NQ0TNy5wsoUnMGvU1J6eugY4x4QDsnl/view?usp=sharing)
+
